@@ -1,0 +1,3 @@
+chunk_p: 1 chunk_dp: 8192 procs: 4
+lcs_yang_v2 is: 9793
+time taken for lcs_yang_v2 is: 84.181711

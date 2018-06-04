@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -cwd
+#$ -o /dev/null
+#$ -e /dev/null
+# Set the number of processes here:
+#$ -pe smp 8
+# Set the number of processors (if different from the above) here:
+setenv OMP_NUM_THREADS 16
+# Change the name of the execuatable here:
+./lcs_yang_v1 > output.txt

@@ -1,0 +1,12 @@
+#!/bin/bash
+#$ -cwd
+#$ -o /dev/null
+#$ -e /dev/null
+# Set the number of MPI processes here:
+#$ -pe mpi 4
+# Set the number of OpenMP threads here:
+setenv OMP_NUM_THREADS 16
+# Change the name of the execuatable here:
+# [Note the use of "--map-by node" below. This forces MPI to distribute only one proc / node,
+#  leaving the other cores on the node available for the OpenMP threads]
+mpirun --map-by node ./hybrid > output.txt
