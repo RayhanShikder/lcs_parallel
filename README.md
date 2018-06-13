@@ -9,6 +9,6 @@ There is a makefile inside each approaches. To run the codes, do the following s
 2. Submit the job written inside the "myjob" file (command: ./myjob).
 3. An "output.txt" file will be generated with the calculated length of the LCS and the execution time of the code.
 
-In the MPI approach, the number of processes can be set inside the "myjob" file of the corresponding directory. The number of threads, for the OpenMP approach, can also be set from the "myjob" file of the corresponding directory. Likewise, both the number of threads, and the number of processes for the Hybrid approach can be set from the "myjob" file inside the corresponding directories.
+In the MPI approach, the number of processes can be set from the "myjob" file of the corresponding directory. The number of threads, for the OpenMP approach, can also be set from the "myjob" file of the corresponding directory. Likewise, both the number of threads, and the number of processes for the Hybrid approach can be set from the "myjob" file inside the corresponding directories.
 
 
