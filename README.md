@@ -1,4 +1,4 @@
-# lcs_parallel
+# LCS Row Parallel
 This repository contains three parallel algorithms of the LCS approach in MPI, OpenMP, and hybrid MPI-OpenMP platforms.
 For all the approaches, both the versions of the row-wise independent algorithm were developed.
 
