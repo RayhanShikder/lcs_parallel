@@ -11,4 +11,6 @@ There is a makefile inside each approaches. To run the codes, do the following s
 
 In the MPI approach, the number of processes can be set from the "myjob" file of the corresponding directory. The number of threads, for the OpenMP approach, can also be set from the "myjob" file of the corresponding directory. Likewise, both the number of threads, and the number of processes for the Hybrid approach can be set from the "myjob" file inside the corresponding directories.
 
+To use this tool in your own machine, please follow the instructions from https://github.com/RayhanShikder/lcs_parallel/wiki
+
 
