@@ -1,3 +1,7 @@
+# object fiels #
+######################
+*.o
+*.out
 # OS generated files #
 ######################
 .DS_Store
