@@ -6,7 +6,7 @@ Finally, for general use of the tool, the OpenMP based implementation has been m
 The "data/" directory contains the required data sets of our study. Data sets of DNA sequences with different lenghts reside inside this directory.
 ### Experimental Purpose
 There is a makefile inside each approaches. To reproduce the results in an experimental setup in a cluster computer. , do the following steps:
-1. Run the make (command: make) command from the corresponding directory
+1. Run the `make` command from the corresponding directory.
 2. Change the input file name in the `myjob` file (in line 10).
 3. Submit the job written inside the "myjob" file (run `./myjob` from terminal).
 4. An "output.txt" file will be generated with the calculated length of the LCS and the execution time of the code.
