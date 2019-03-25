@@ -1,3 +1,13 @@
+
+/****
+    Author: Rayhan Shikder,
+    email: shikderr@myumanitoba.ca
+    MSc Student,
+    Department of Computer Science,
+    University of Manitoba, Winnipeg, MB, Canada
+****/
+
+
 #include<stdio.h>
 #include<string.h>
 #include <stdlib.h>
@@ -174,14 +184,6 @@ int main(int argc, char *argv[])
         DP_Results[l]=0;
         dp_prev_row[l]=0;
     }
-    //resetting DP to zero values
-    // for(int k=0;k<len_a+1;k++)
-    // {
-    //     for(int l=0;l<len_b+1;l++)
-    //     {
-    //         DP_Results[k][l]=0;
-    //     }
-    // }
 
     // printf("\n##################################\n");
     printf("\n######## Sequential Results ########\n");
