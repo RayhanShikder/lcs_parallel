@@ -5,11 +5,11 @@
 ###############################################
 
 # name of the executable to be generated
-PROG = lcs_yang_v2
+PROG = find_lcs
 # space-delimited list of header files
 HDRS =
 # space-delimited list of source files
-SRCS = lcs_yang_v2.c 
+SRCS = find_lcs.c 
 
 #######################
 # Don't change these: #

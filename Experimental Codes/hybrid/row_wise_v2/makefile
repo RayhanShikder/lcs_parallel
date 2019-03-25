@@ -5,11 +5,11 @@
 ###############################################
 
 # name of the executable to be generated
-PROG = hybrid
+PROG = row_wise_v2
 # space-delimited list of header files
 HDRS = 
 # space-delimited list of source files
-SRCS = lcs_yang_v2.c 
+SRCS = row_wise_v2.c 
 
 #######################
 # Don't change these: #

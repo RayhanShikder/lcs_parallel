@@ -1,3 +1,0 @@
-1 : 32768 32767 4
-lcs is: 9793
-time taken by normal algorithm is: 7.707382

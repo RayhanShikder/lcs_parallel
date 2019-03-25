@@ -5,11 +5,11 @@
 ###############################################
 
 # name of the executable to be generated
-PROG = lcs_yang_v1
+PROG = row_wise_v1
 # space-delimited list of header files
 HDRS =
 # space-delimited list of source files
-SRCS = lcs_yang_v1.c 
+SRCS = row_wise_v1.c 
 
 #######################
 # Don't change these: #

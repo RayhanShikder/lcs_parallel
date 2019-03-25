@@ -1,13 +1,14 @@
 
-Your input file: 8.txt 
-Length of sequence 1: 32276 bp
-Length of sequence 2: 32133 bp
+Your input file: ../Data/test.txt 
+Length of sequence 1: 16 bp
+Length of sequence 2: 15 bp
 
 ######## Parallel Results ########
 Number of threads used: 4
-Length of the LCS is: 21078
-Total time taken: 8.875198 seconds
+Length of the LCS is: 11
+Total time taken: 0.002481 seconds
 
 ######## Sequential Results ########
-Length of the LCS is: 21078
-Total time taken: 9.469845 seconds
+Length of the LCS is: 11
+Total time taken: 0.000003 seconds
+

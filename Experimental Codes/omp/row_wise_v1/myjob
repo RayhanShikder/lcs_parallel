@@ -7,4 +7,4 @@
 # Set the number of processors (if different from the above) here:
 setenv OMP_NUM_THREADS 16
 # Change the name of the execuatable here:
-./lcs_yang_v1 > output.txt
+./row_wise_v1 > output.txt
