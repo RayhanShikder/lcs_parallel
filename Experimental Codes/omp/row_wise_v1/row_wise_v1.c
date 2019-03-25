@@ -1,9 +1,12 @@
-/*
- *  * Name: Rayhan Shikder
- *  * email: shikderr@cs.umanitoba.ca
- *  * student ID: 007833032
- *  * LCS_YANG Version 1
- **/
+
+/****
+    Author: Rayhan Shikder,
+    email: shikderr@myumanitoba.ca
+    MSc Student,
+    Department of Computer Science,
+    University of Manitoba, Winnipeg, MB, Canada
+****/
+
 
 #include<stdio.h>
 #include<string.h>

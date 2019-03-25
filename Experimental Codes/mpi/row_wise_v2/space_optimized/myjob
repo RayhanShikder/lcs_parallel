@@ -1,0 +1,8 @@
+#!/bin/bash
+#$ -cwd
+#$ -o /dev/null
+#$ -e /dev/null
+# Set the number of processes here:
+#$ -pe mpi 4
+# Change the name of the execuatable here:
+mpirun ./row_wise_v2 > output.txt

@@ -1,3 +1,13 @@
+
+/****
+    Author: Rayhan Shikder,
+    email: shikderr@myumanitoba.ca
+    MSc Student,
+    Department of Computer Science,
+    University of Manitoba, Winnipeg, MB, Canada
+****/
+
+
 #include<stdio.h>
 #include<string.h>
 #include <stdlib.h>
