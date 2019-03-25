@@ -6,5 +6,5 @@
 #$ -pe smp 8
 # Set the number of processors (if different from the above) here:
 setenv OMP_NUM_THREADS 16
-# Change the name of the execuatable here:
-./row_wise_v1 > output.txt
+# Change the name of the execuatable and the file name from here:
+./row_wise_v1 ../../data/simulated/9.txt > output.txt

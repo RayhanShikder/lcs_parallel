@@ -145,6 +145,11 @@ short lcs(short **DP, char *A, char *B, int m, int n)
 
 int main(int argc, char *argv[])
 {
+    if(argc <= 1){
+        printf("Error: No input file specified! Please specify the input file, and run again!\n");
+        return 0;
+    }
+    
 	int my_rank;
     int num_procs;
     int chunk_size_p,chunk_size_dp;//chunk_size for P matrix and DP matrix
@@ -158,7 +163,8 @@ int main(int argc, char *argv[])
     int len_a,len_b;
     double start_time,stop_time,start_time_yang,stop_time_yang;
 
-    fp = fopen("/home/cs/grad/shikderr/lcs/data/32768.txt", "r");
+    if(my_rank == 0)printf("\nYour input file: %s \n",argv[1]);
+    fp = fopen(argv[1], "r");
     fscanf(fp, "%d %d %d", &len_a, &len_b, &c_len);
     string_A = (char *)malloc((len_a+1) * sizeof(char *));
     string_B = (char *)malloc((len_b+1) * sizeof(char *));

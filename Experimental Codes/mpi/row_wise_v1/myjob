@@ -5,4 +5,4 @@
 # Set the number of processes here:
 #$ -pe mpi 4
 # Change the name of the execuatable here:
-mpirun ./row_wise_v1 > output.txt
+mpirun ./row_wise_v1 ../../data/simulated/9.txt > output.txt

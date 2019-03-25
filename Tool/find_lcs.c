@@ -121,7 +121,12 @@ int lcs(int *DP, int *prev_row, char *A, char *B, int m, int n)
 int main(int argc, char *argv[])
 {
 
-   printf("\nYour input file: %s \n",argv[1]);
+    if(argc <= 1){
+        printf("Error: No input file specified! Please specify the input file, and run again!\n");
+        return 0;
+    }
+
+    printf("\nYour input file: %s \n",argv[1]);
 
     FILE *fp;
     int len_a,len_b;
@@ -134,7 +139,16 @@ int main(int argc, char *argv[])
     printf("Length of sequence 2: %d bp\n", len_b);
 
 
-    // printf("\n##################################\n");
+ 
+
+
+    string_A = (char *)malloc((len_a+1) * sizeof(char *));
+    string_B = (char *)malloc((len_b+1) * sizeof(char *));
+    unique_chars_C = (char *)malloc((c_len+1) * sizeof(char *));
+
+    fscanf(fp, "%s %s %s", string_A,string_B,unique_chars_C);
+
+   // printf("\n##################################\n");
     printf("\n######## Parallel Results ########\n");
     // printf("##################################\n");
 //looking at the number of available threads
@@ -145,22 +159,10 @@ int main(int argc, char *argv[])
           printf("Number of threads used: %d\n", omp_get_num_threads() );
       }
   }
-
-
-    string_A = (char *)malloc((len_a+1) * sizeof(char *));
-    string_B = (char *)malloc((len_b+1) * sizeof(char *));
-    unique_chars_C = (char *)malloc((c_len+1) * sizeof(char *));
-
-    fscanf(fp, "%s %s %s", string_A,string_B,unique_chars_C);
-
     //allocate memory for DP Results
     DP_Results = (int *)malloc((len_b+1) * sizeof(int));
     dp_prev_row = (int *)malloc((len_b+1) * sizeof(int));
-    // for(int k=0;k<len_a+1;k++)
-    // {
-    //     DP_Results[k] = (int *)calloc((len_b+1), sizeof(int));
-    // }
-
+    
 
     //allocate memory for P_Matrix array
     P_Matrix = (int **)malloc(c_len * sizeof(int *));
@@ -169,7 +171,6 @@ int main(int argc, char *argv[])
         P_Matrix[k] = (int *)calloc((len_b+1), sizeof(int));
     }
 
-    calc_P_matrix_v2(P_Matrix,string_B,len_b,unique_chars_C,c_len);
 
     start_time = omp_get_wtime();
     calc_P_matrix_v2(P_Matrix,string_B,len_b,unique_chars_C,c_len);

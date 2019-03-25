@@ -1,4 +1,4 @@
-# Comp 4510 - Sample Hybrid MPI-OpenMP Makefile
+# Sample Hybrid MPI-OpenMP Makefile
 
 ###############################################
 # Change these files names to match your own: #

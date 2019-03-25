@@ -7,4 +7,4 @@
 # Set the number of processors (if different from the above) here:
 setenv OMP_NUM_THREADS 16
 # Change the name of the execuatable here:
-./row_wise_v2 > output.txt
+./row_wise_v2 ../../../data/simulated/9.txt > output.txt

@@ -7,4 +7,4 @@
 # Set the number of processors (if different from the above) here:
 setenv OMP_NUM_THREADS $NSLOTS
 # Change the name of the execuatable here:
-./lcs > output.txt
+./lcs ../../data/simulated/9.txt > output.txt

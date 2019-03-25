@@ -122,13 +122,18 @@ short lcs(short **DP, char *A, char *B, int m, int n)
 int main(int argc, char *argv[])
 {
 
-//    printf("arg 1: %s argv2: %s\n",argv[1],argv[2]);
+    if(argc <= 1){
+        printf("Error: No input file specified! Please specify the input file, and run again!\n");
+        return 0;
+    }
+    printf("\nYour input file: %s \n",argv[1]);
+    
 
     FILE *fp;
     int len_a,len_b;
     double start_time, stop_time;
 
-    fp = fopen("/home/cs/grad/shikderr/lcs/data/32768.txt", "r");
+    fp = fopen(argv[1], "r");
     fscanf(fp, "%d %d %d", &len_a, &len_b, &c_len);
     printf("1 : %d %d %d\n", len_a, len_b, c_len );
 

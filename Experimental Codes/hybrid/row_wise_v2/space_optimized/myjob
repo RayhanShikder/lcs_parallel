@@ -9,4 +9,4 @@ setenv OMP_NUM_THREADS 16
 # Change the name of the execuatable here:
 # [Note the use of "--map-by node" below. This forces MPI to distribute only one proc / node,
 #  leaving the other cores on the node available for the OpenMP threads]
-mpirun --map-by node ./row_wise_v2 > output.txt
+mpirun --map-by node ./row_wise_v2 ../../../data/simulated/9.txt > output.txt

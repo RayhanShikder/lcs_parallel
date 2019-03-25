@@ -1,4 +1,4 @@
-# Comp 4510 - Sample OpenMP Makefile
+# Sample OpenMP Makefile
 
 ###############################################
 # Change these files names to match your own: #
@@ -20,8 +20,11 @@ OBJDIR = object
 # names of object files
 OBJS = $(patsubst %.c, $(OBJDIR)/%.o, $(SRCS)) 
 
+##################################################
+# Change the name of compiler to match your own: #
+##################################################
 # name of the compiler
-CC = gcc-8
+CC = gcc
 # additional compiler flags to pass in
 CFLAGS = -fopenmp -Wall --std=c99 -L.
 # libraries for the linker

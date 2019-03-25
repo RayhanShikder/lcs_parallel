@@ -1,4 +1,4 @@
-# Comp 4510 - Sample OpenMP Makefile
+# Sample Makefile
 
 ###############################################
 # Change these files names to match your own: #
