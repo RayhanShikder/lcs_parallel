@@ -7,7 +7,7 @@ The "data/" directory contains the required data sets of our study. Data sets of
 ### Experimental Use
 
 #### Prerequisites
-OpenMP and OpenMPI need to be installed in the machine before running the experiments.
+OpenMP and OpenMPI need to be installed in the machine before running the experiments. The versions of **gcc**, **OpenMPI**, and **OpenMP** should be: gcc 4.8.5 or later, OpenMPI version 1.10.7 or later, OpenMP version 3.1 or later.
 ### How To?
 There is a makefile inside each approaches. To reproduce the results in an experimental setup in a cluster computer, do the following steps:
 1. Run the `make` command from the corresponding directory.
