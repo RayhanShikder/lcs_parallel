@@ -11,7 +11,7 @@ OpenMP and OpenMPI need to be installed in the machine before running the experi
 ### How To?
 There is a makefile inside each approaches. To reproduce the results in an experimental setup in a cluster computer, do the following steps:
 1. Run the `make` command from the corresponding directory.
-2. Change the input file name in the `myjob` file (in line 10).
+2. Change the input file name in the `myjob` file (last line).
 3. Submit the job written inside the "myjob" file (run `./myjob` from terminal).
 4. An "output.txt" file will be generated with the calculated length of the LCS and the execution time of the code.
 
